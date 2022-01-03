@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css">
+    <link rel="stylesheet" href="/node_modules/reveal.js/dist/theme/black.css">
+
+      <!-- <link rel="stylesheet" href="dist/reset.css">
+      <link rel="stylesheet" href="dist/reveal.css">
+      <link rel="stylesheet" href="dist/theme/black.css"> -->
+      <script src="https://unpkg.com/vue"></script>
+      <script src="https://unpkg.com/vueperslides"></script>
+      <link href="https://unpkg.com/vueperslides/dist/vueperslides.css" rel="stylesheet">
+<!-- Theme used for syntax highlighted code -->
+<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+
+    <!-- <div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+			</div>
+		</div> -->
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+
+			// Reveal.initialize({
+			// 	hash: true,
+
+			// 	// Learn about plugins: https://revealjs.com/plugins/
+			// 	plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			// });
+
+		</script>
+
+
+
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
